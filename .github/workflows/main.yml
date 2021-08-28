@@ -13,4 +13,4 @@ jobs:
         run: mvn package
 
       - name: tomcat deploy
-        run: curl -v -u admin:admin -T /home/runner/work/spring3-mvc-maven-xml-hello-world/spring3-mvc-maven-xml-hello-world/target/spring3-mvc-maven-xml-hello-world-1.2.war 'http://ec2-13-235-99-91.ap-south-1.compute.amazonaws.com:8080/manager/text/deploy?path=/github_action_spring'
+        run: curl -v -u admin:admin -T /home/runner/work/spring3-mvc-maven-xml-hello-world/spring3-mvc-maven-xml-hello-world/target/spring3-mvc-maven-xml-hello-world-1.2.war 'http://ec2-13-235-99-91.ap-south-1.compute.amazonaws.com:8080/manager/text/deploy?path=/github_action_spring/&update=true'
